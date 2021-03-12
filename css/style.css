@@ -15,7 +15,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-    color: #B3EFFF;
+    color: #A7CED8;
     outline: none;
     text-decoration: none;
 }
@@ -76,7 +76,7 @@ a:focus {
 }
 
 .navbar-expand-md .navbar-nav .nav-link i {
-    color: #046B99;
+    color: #06A0E5;
     float: right;
     padding-top: 5px;
     transition: all .3s;
@@ -84,12 +84,12 @@ a:focus {
 
 .navbar-expand-md .navbar-nav .nav-link:hover,
 .navbar-expand-md .navbar-nav .nav-link.active {
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:hover i,
 .navbar-expand-md .navbar-nav .nav-link.active i{
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 
@@ -207,8 +207,8 @@ a:focus {
         margin: 0 15px 15px 0;
         text-align: center;
         font-size: 18px;
-        color: #222222;
-        background: #046B99;
+        color: #ffffff;
+        background: #06A0E5;
     }
     
     .sidebar .sidebar-footer a:last-child {
@@ -216,9 +216,9 @@ a:focus {
     }
     
     .sidebar .sidebar-footer a:hover {
-        color: #046B99;
+        color: #06A0E5;
         background: #ffffff;
-        border: 1px solid #B3EFFF;
+        border: 1px solid #A7CED8;
     }
     
     .sidebar:hover .sidebar-footer {
@@ -286,7 +286,7 @@ a:focus {
 }
 
 .back-to-top i:hover {
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 .back-to-top {
@@ -319,14 +319,14 @@ a:focus {
     background-size: contain;
 }
 .header p {
-    color: #046B99;
+    color: #06A0E5;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .header h3 {
-    color: #B3EFFF;
+    color: #A7CED8;
     font-size: 40px;
     font-weight: 700;
 }
@@ -347,7 +347,7 @@ a:focus {
 .header .typed-cursor {
     font-size: 25px;
     font-weight: 300;
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 .large-btn .content-inner {
@@ -361,13 +361,13 @@ a:focus {
     padding: 15px 0;
     color: #ffffff;
     font-size: 20px;
-    background: #046B99;
+    background: #06A0E5;
     border-radius: 0;
 }
 
 .large-btn .btn:last-child {
     color: #222222;
-    background: #B3EFFF;
+    background: #A7CED8;
 }
 
 .large-btn .btn i {
@@ -387,8 +387,8 @@ a:focus {
 .large-btn .btn:hover {
     width: 50%;
     background: black;
-    border: 1px solid #046B99;
-    color: #B3EFFF;
+    border: 1px solid #06A0E5;
+    color: #A7CED8;
 }
 
 
@@ -403,7 +403,7 @@ a:focus {
 }
 
 .content-header h2 {
-    color: #B3EFFF;
+    color: #A7CED8;
     font-size: 35px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -418,7 +418,7 @@ a:focus {
     height: 3px;
     bottom: 0;
     left: 0;
-    background: #046B99;
+    background: #06A0E5;
 }
 
 
@@ -431,17 +431,17 @@ a:focus {
     background: #222222;
     border-bottom: 30px solid #222222;
     color: #ffffff;
-    border-top: 1px solid #B3EFFF;
-    border-right: 1px solid #B3EFFF;
-    border-left: 1px solid #B3EFFF;
+    border-top: 1px solid #A7CED8;
+    border-right: 1px solid #A7CED8;
+    border-left: 1px solid #A7CED8;
 }
 
 .about a {
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 .about a:hover {
-    color: #046B99;
+    color: #06A0E5;
 }
 
 
@@ -459,14 +459,14 @@ a:focus {
 .about .btn {
     border-radius: 0;
     color: #222222;
-    background: #B3EFFF;
+    background: #A7CED8;
     transition: all .3s;
 }
 
 .about .btn:hover {
-    color: #B3EFFF;
+    color: #A7CED8;
     background: #222222;
-    border: 1px solid #046B99;
+    border: 1px solid #06A0E5;
 }
 
 .about .skills {
@@ -492,13 +492,13 @@ a:focus {
 .about .progress {
     background-color: #222222;
     height: 9px;
-    border: 1px solid #B3EFFF;
+    border: 1px solid #A7CED8;
     border-radius: 0;
 }
 
 .about .progress .progress-bar {
     width: 1px;
-    background: #B3EFFF;
+    background: #A7CED8;
     border-radius: 0;
     transition: 5s;
 }
@@ -513,29 +513,29 @@ a:focus {
     background: #222222;
     border-bottom: 30px solid #222222;
     color: #ffffff;
-    border-top: 1px solid #B3EFFF;
-    border-right: 1px solid #B3EFFF;
-    border-left: 1px solid #B3EFFF;
+    border-top: 1px solid #A7CED8;
+    border-right: 1px solid #A7CED8;
+    border-left: 1px solid #A7CED8;
 }
 
 .education a {
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 .education a:hover {
-    color: #046B99;
+    color: #06A0E5;
 }
 
 .education h3 {
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 .education .edu-col {
     position: relative;
     width: 100%;
     padding: 20px 0 20px 20px;
-    border-left: 1px solid #B3EFFF;
-    border-bottom: 1px solid #B3EFFF;
+    border-left: 1px solid #A7CED8;
+    border-bottom: 1px solid #A7CED8;
 }
 
 .education .col-md-6:first-child .edu-col {
@@ -572,14 +572,14 @@ a:focus {
     content: "";
     width: 11px;
     height: 11px;
-    background: #B3EFFF;
+    background: #A7CED8;
     top: 5px;
     left: -26px;
     border-radius: 5px;
 }
 
 .education .edu-col span i {
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 .education .edu-col h3 {
@@ -602,17 +602,17 @@ a:focus {
     background: #222222;
     border-bottom: 30px solid #222222;
     color: #ffffff;
-    border-top: 1px solid #B3EFFF;
-    border-right: 1px solid #B3EFFF;
-    border-left: 1px solid #B3EFFF;
+    border-top: 1px solid #A7CED8;
+    border-right: 1px solid #A7CED8;
+    border-left: 1px solid #A7CED8;
 }
 
 .experience h3,h5{
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 .experience h4{
-    color: #046B99;
+    color: #06A0E5;
 }
 
 
@@ -620,8 +620,8 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 20px 0 20px 20px;
-    border-left: 1px solid #B3EFFF;
-    border-bottom: 1px solid #B3EFFF;
+    border-left: 1px solid #A7CED8;
+    border-bottom: 1px solid #A7CED8;
 }
 
 .experience .col-md-6:first-child .exp-col {
@@ -658,14 +658,14 @@ a:focus {
     content: "";
     width: 11px;
     height: 11px;
-    background: #B3EFFF;
+    background: #A7CED8;
     top: 5px;
     left: -26px;
     border-radius: 5px;
 }
 
 .experience .exp-col span i {
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 .experience .exp-col h3 {
@@ -702,13 +702,13 @@ a:focus {
     background: #222222;
     border-bottom: 30px solid #222222;
     color: #ffffff;
-    border-top: 1px solid #B3EFFF;
-    border-right: 1px solid #B3EFFF;
-    border-left: 1px solid #B3EFFF;
+    border-top: 1px solid #A7CED8;
+    border-right: 1px solid #A7CED8;
+    border-left: 1px solid #A7CED8;
 }
 
 .service h3 {
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 .service .srv-col {
@@ -756,9 +756,9 @@ a:focus {
     padding: 60px 30px 30px 30px;
     background: #222222;
     border-bottom: 30px solid #222222;
-    border-top: 1px solid #B3EFFF;
-    border-right: 1px solid #B3EFFF;
-    border-left: 1px solid #B3EFFF;
+    border-top: 1px solid #A7CED8;
+    border-right: 1px solid #A7CED8;
+    border-left: 1px solid #A7CED8;
 }
 
 .portfolio #portfolio-flters {
@@ -778,14 +778,14 @@ a:focus {
     font-size: 13px;
     line-height: 15px;
     text-transform: uppercase;
-    border: 1px solid #B3EFFF;
+    border: 1px solid #A7CED8;
     background: #222222;
     transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    background: #046B99;
+    background: #06A0E5;
     color: #ffffff;
 }
 
@@ -825,7 +825,7 @@ a:focus {
     text-align: center;
     width: 45px;
     height: 35px;
-    background: #046B99;
+    background: #06A0E5;
     transition: 0.2s linear;
 }
 
@@ -843,7 +843,7 @@ a:focus {
 
 .portfolio .portfolio-item figure .link-preview:hover i,
 .portfolio .portfolio-item figure .link-details:hover i {
-    color: #046B99;
+    color: #06A0E5;
 }
 
 .portfolio .portfolio-item figure .link-preview {
@@ -907,9 +907,9 @@ a:focus {
     background: #222222;
     border-bottom: 30px solid #222222;
     color: #ffffff;
-    border-top: 1px solid #B3EFFF;
-    border-right: 1px solid #B3EFFF;
-    border-left: 1px solid #B3EFFF;
+    border-top: 1px solid #A7CED8;
+    border-right: 1px solid #A7CED8;
+    border-left: 1px solid #A7CED8;
 }
 
 .review .content-inner {
@@ -946,7 +946,7 @@ a:focus {
 .review .review-name p {
     font-size: 14px;
     margin-bottom: 0;
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 .review .review-text .ratting {
@@ -1034,7 +1034,7 @@ a:focus {
 }
 
 .review-slider .slick-dots li.slick-active button:before {
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 .review-slider.slick-slider {
@@ -1050,9 +1050,9 @@ a:focus {
     padding: 60px 30px 30px 30px;
     background: #222222;
     color: #ffffff;
-    border-top: 1px solid #B3EFFF;
-    border-right: 1px solid #B3EFFF;
-    border-left: 1px solid #B3EFFF;
+    border-top: 1px solid #A7CED8;
+    border-right: 1px solid #A7CED8;
+    border-left: 1px solid #A7CED8;
 }
 
 .contact .contact-info {
@@ -1071,7 +1071,7 @@ a:focus {
 
 .contact .contact-info p i {
     width: 25px;
-    color: #B3EFFF;
+    color: #A7CED8;
 }
 
 .contact .contact-info p a {
@@ -1079,7 +1079,7 @@ a:focus {
 }
 
 .contact .contact-info p a:hover {
-    color: #046B99;
+    color: #06A0E5;
     text-decoration: none;
 }
 
@@ -1092,7 +1092,7 @@ a:focus {
     height: 35px;
     padding: 5px 0;
     color: #222222;
-    background: #046B99;
+    background: #06A0E5;
     border-radius: 0;
     margin-top: 15px;
     margin-right: 15px;
@@ -1105,9 +1105,9 @@ a:focus {
 }
 
 .contact .social a:hover {
-    color: #046B99;
+    color: #06A0E5;
     background: #ffffff;
-    border: 1px solid #B3EFFF;
+    border: 1px solid #A7CED8;
 }
 
 .contact .form {
@@ -1119,18 +1119,18 @@ a:focus {
 .contact .form .form-control {
     border-radius: 0;
     background-color: #222222;
-    border-color: #046B99;
+    border-color: #06A0E5;
     color: #ffffff;
 }
 
 .contact .form .form-control:focus {
     box-shadow: none;
-    border-color: #B3EFFF;
+    border-color: #A7CED8;
 }
 
 .contact .form .btn {
     color: #ffffff;
-    background: #046B99;
+    background: #06A0E5;
     border-radius: 0;
     transition: all .3s;
 }
@@ -1138,7 +1138,7 @@ a:focus {
 .contact .form .btn:hover {
     color: #ffffff;
     background: #222222;
-    border: 1px solid #B3EFFF;
+    border: 1px solid #A7CED8;
 }
 
 
@@ -1169,10 +1169,10 @@ a:focus {
 }
 
 .footer a {
-    color: #B3EFFF;
+    color: #A7CED8;
     font-weight: 600;
 }
 
 .footer a:hover {
-    color: #046B99;
+    color: #06A0E5;
 }
