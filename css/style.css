@@ -39,7 +39,7 @@ a:focus {
     position: relative;
     width: 100%;
     float: left;
-    background: #222222;
+    background: black;
 }
 
 .wrapper .content {
@@ -196,7 +196,7 @@ a:focus {
         padding: 15px;
         font-size: 0;
         text-align: center;
-        background: #222222;
+        background: black;
     }
     
     .sidebar .sidebar-footer a {
@@ -217,8 +217,8 @@ a:focus {
     
     .sidebar .sidebar-footer a:hover {
         color: #046B99;
-        background: #222222;
-        border: 1px solid #046B99;
+        background: #ffffff;
+        border: 1px solid #B3EFFF;
     }
     
     .sidebar:hover .sidebar-footer {
@@ -310,7 +310,7 @@ a:focus {
 /**********************************/
 .header {
     position: relative;
-    background: #222222;
+    background: black;
 }
 
 .header .content-inner {
@@ -386,7 +386,7 @@ a:focus {
 
 .large-btn .btn:hover {
     width: 50%;
-    background: #222222;
+    background: black;
     border: 1px solid #046B99;
     color: #B3EFFF;
 }
@@ -498,7 +498,7 @@ a:focus {
 
 .about .progress .progress-bar {
     width: 1px;
-    background: #ffffff;
+    background: #B3EFFF;
     border-radius: 0;
     transition: 5s;
 }
