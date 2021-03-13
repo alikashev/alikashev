@@ -428,12 +428,10 @@ a:focus {
 .about {
     position: relative;
     padding: 60px 30px;
-    background: #222222;
+    background: #1c1c21;
     border-bottom: 30px solid #222222;
     color: #ffffff;
     border-top: 1px solid #A7CED8;
-    border-right: 1px solid #A7CED8;
-    border-left: 1px solid #A7CED8;
 }
 
 .about a {
@@ -514,8 +512,6 @@ a:focus {
     border-bottom: 30px solid #222222;
     color: #ffffff;
     border-top: 1px solid #A7CED8;
-    border-right: 1px solid #A7CED8;
-    border-left: 1px solid #A7CED8;
 }
 
 .education a {
@@ -599,12 +595,10 @@ a:focus {
 .experience {
     position: relative;
     padding: 60px 30px;
-    background: #222222;
+    background: #1c1c21;
     border-bottom: 30px solid #222222;
     color: #ffffff;
     border-top: 1px solid #A7CED8;
-    border-right: 1px solid #A7CED8;
-    border-left: 1px solid #A7CED8;
 }
 
 .experience h3,h5{
@@ -703,8 +697,6 @@ a:focus {
     border-bottom: 30px solid #222222;
     color: #ffffff;
     border-top: 1px solid #A7CED8;
-    border-right: 1px solid #A7CED8;
-    border-left: 1px solid #A7CED8;
 }
 
 .service h3 {
@@ -754,11 +746,9 @@ a:focus {
 .portfolio {
     position: relative;
     padding: 60px 30px 30px 30px;
-    background: #222222;
+    background: #1c1c21;
     border-bottom: 30px solid #222222;
     border-top: 1px solid #A7CED8;
-    border-right: 1px solid #A7CED8;
-    border-left: 1px solid #A7CED8;
 }
 
 .portfolio #portfolio-flters {
@@ -908,8 +898,6 @@ a:focus {
     border-bottom: 30px solid #222222;
     color: #ffffff;
     border-top: 1px solid #A7CED8;
-    border-right: 1px solid #A7CED8;
-    border-left: 1px solid #A7CED8;
 }
 
 .review .content-inner {
@@ -1048,11 +1036,9 @@ a:focus {
 .contact {
     position: relative;
     padding: 60px 30px 30px 30px;
-    background: #222222;
+    background: #1c1c21;
     color: #ffffff;
     border-top: 1px solid #A7CED8;
-    border-right: 1px solid #A7CED8;
-    border-left: 1px solid #A7CED8;
 }
 
 .contact .contact-info {
