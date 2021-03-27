@@ -45,7 +45,7 @@ a:focus {
 .wrapper .content {
     position: relative;
     width: 100%;
-    padding: 15px;
+    padding: 1px;
     float: left;
     background: #222222;
 }
@@ -457,7 +457,7 @@ a:focus {
 .about .btn {
     border-radius: 0;
     color: #222222;
-    background: #A7CED8;
+    background: #898989;
     transition: all .3s;
 }
 
