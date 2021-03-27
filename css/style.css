@@ -456,15 +456,15 @@ a:focus {
 
 .about .btn {
     border-radius: 0;
-    color: #222222;
-    background: #898989;
+    color: #ffffff;
+    background: #06A0E5;
     transition: all .3s;
 }
 
 .about .btn:hover {
     color: #A7CED8;
     background: #222222;
-    border: 1px solid #06A0E5;
+    border: 1px solid #A7CED8;
 }
 
 .about .skills {
@@ -1143,10 +1143,6 @@ a:focus {
     .footer .col-md-6,
     .footer .col-md-6:last-child{
         text-align: center;
-    }
-
-    .nav-toggler-icon {
-        float: right;
     }
 }
 
