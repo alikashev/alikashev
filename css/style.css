@@ -613,6 +613,14 @@ a:focus {
     color: #06A0E5;
 }
 
+.experience a {
+    color: #A7CED8;
+}
+
+.experience a:hover {
+    color: #06A0E5;
+}
+
 
 .experience .exp-col {
     position: relative;
