@@ -434,7 +434,6 @@ a:focus {
     position: relative;
     padding: 60px 30px;
     background: #1c1c21;
-    border-bottom: 30px solid #222222;
     color: #ffffff;
     border-top: 1px solid #A7CED8;
 }
@@ -505,6 +504,59 @@ a:focus {
     border-radius: 0;
     transition: 5s;
 }
+
+/**********************************/
+/********* Skills CSS **********/
+/**********************************/
+
+.skillss {
+    position: relative;
+    padding: 60px 30px 30px 30px;
+    background: #1c1c21;
+    border-bottom: 30px solid #222222;
+    color: #ffffff;
+}
+
+.skillss h3 {
+    color: #A7CED8;
+}
+
+.skillss .srv-col {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.skillss .srv-col i {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.skillss .srv-col h3 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.experience .exp-col h4 {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.experience .exp-col h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.experience .exp-col p {
+    margin: 0;
+}
+
 
 
 /**********************************/
