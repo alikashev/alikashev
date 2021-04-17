@@ -315,12 +315,12 @@ a:focus {
 /**********************************/
 .header {
     position: relative;
-    background: black;
+    background: #222;
 }
 
 .header .content-inner {
     padding: 100px 30px;
-    background: url(../img/profile.png) right bottom no-repeat;
+    background: url(../img/about1.png) right bottom no-repeat;
     background-size: contain;
 }
 .header p {
@@ -333,7 +333,8 @@ a:focus {
 .header h3 {
     color: #A7CED8;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 100;
+    letter-spacing: 10px;
 }
 
 .header h4 {
@@ -350,8 +351,8 @@ a:focus {
 }
 
 .header .typed-cursor {
-    font-size: 25px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 200;
     color: #A7CED8;
 }
 
