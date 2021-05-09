@@ -433,7 +433,7 @@ a:focus {
 /**********************************/
 .about {
     position: relative;
-    padding: 60px 30px;
+    padding: 60px 30px 0px 30px;
     background: #1c1c21;
     color: #ffffff;
     border-top: 1px solid #A7CED8;
