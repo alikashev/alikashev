@@ -1270,5 +1270,6 @@ a:focus {
 }
 
 .loading {
-    float: left;
+    position: relative;
+    margin-right: 20px;
 }
