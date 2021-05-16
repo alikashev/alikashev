@@ -503,7 +503,7 @@ a:focus {
     width: 1px;
     background: #A7CED8;
     border-radius: 0;
-    transition: 8s;
+    transition: 7s;
 }
 
 /**********************************/
@@ -1240,4 +1240,35 @@ a:focus {
 .logo {
     width: 150px;
     padding: 5px;
+}
+
+.splash {
+    position: fixed;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #1c1c21;
+    z-index: 200;
+    color: white;
+    text-align: center;
+    line-height: 90vh;
+}
+
+.splash.display-none {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: -10;
+    line-height: 90vh;
+    transition: all 0.5s;
+}
+
+.loading {
+    float: left;
 }
