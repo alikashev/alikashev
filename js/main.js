@@ -77,6 +77,8 @@
     });
 })(jQuery);
 
+// splash screen 
+
 const splash = document.querySelector('.splash');
 
 document.addEventListener('DOMContentLoaded', (e)=>{
@@ -84,3 +86,67 @@ document.addEventListener('DOMContentLoaded', (e)=>{
         splash.classList.add('display-none');
     }, 3000);
 })
+
+// contact form 
+
+$(document).ready(function () {
+    $(".contactForm").submit(function (event) {
+        $(".form-group").removeClass("has-error");
+        $(".help-block").remove();
+      var formData = {
+        name: $("#form-name").val(),
+        email: $("#form-email").val(),
+        subject: $("#form-subject").val(),
+        formMessage: $("#form-message").val(),
+      };
+  
+      $.ajax({
+        type: "POST",
+        url: "process.php",
+        data: formData,
+        dataType: "json",
+        encode: true,
+
+      }).done(function (data) {
+        console.log(data);
+        if (!data.success) {
+            if (data.errors.name) {
+              $("#form-name").addClass("has-error");
+              $(".#form-name").append(
+                '<div class="help-block">' + data.errors.name + "</div>"
+              );
+            }
+    
+            if (data.errors.email) {
+              $("#form-email").addClass("has-error");
+              $("#form-email").append(
+                '<div class="help-block">' + data.errors.email + "</div>"
+              );
+            }
+    
+            if (data.errors.subject) {
+              $("#form-subject").addClass("has-error");
+              $("#form-subject").append(
+                '<div class="help-block">' + data.errors.subject + "</div>"
+              );
+            }
+    
+            if (data.errors.formMessage) {
+                $("#form-message").addClass("has-error");
+                $("#form-message").append(
+                  '<div class="help-block">' + data.errors.formMessage + "</div>"
+                );
+            }
+          } else {
+            $("form").html(
+              '<div class="alert alert-success">' + data.message + "</div>"
+            );
+          }
+      }).fail(function (data) {
+        $("form").html(
+          '<div class="alert alert-danger">Could not reach server, please try again later.</div>'
+        );
+      });
+      event.preventDefault();
+    });
+  });

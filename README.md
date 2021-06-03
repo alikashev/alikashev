@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @alikashev
 - 👀 I’m interested in Software Development
 - 🌱 I’m currently learning PHP and Javascript
-- 📫 How to reach me kasev21@gmail.com
+- 📫 How to reach me: kasev21@gmail.com
 
 <!---
 alikashev/alikashev is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
