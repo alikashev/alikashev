@@ -1,0 +1,27 @@
+{
+  "name": "alikashev",
+  "version": "1.0.0",
+  "description": "- 👋 Hi, I’m @alikashev\r - 👀 I’m interested in Software Development\r - 🌱 I’m currently learning PHP and Javascript\r - 📫 How to reach me: kasev21@gmail.com",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "startbs": "browser-sync start -sw",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alikashev/alikashev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alikashev/alikashev/issues"
+  },
+  "homepage": "https://github.com/alikashev/alikashev#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.4"
+  }
+}
