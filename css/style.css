@@ -1,6 +1,11 @@
 /**********************************/
 /********** General CSS ***********/
 /**********************************/
+
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     color: #666666;
     background: #222222;
@@ -1272,4 +1277,14 @@ a:focus {
 .loading {
     position: relative;
     margin-right: 20px;
+}
+
+.skills-text {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.c-link {
+    transition: all .3s;
 }
