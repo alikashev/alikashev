@@ -90,16 +90,16 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 // contact form 
 
 $(document).ready(function () {
-    $(".contactForm").submit(function (event) {
+    $(".form").submit(function (event) {
         $(".form-group").removeClass("has-error");
         $(".help-block").remove();
-      var formData = {
-        name: $("#form-name").val(),
-        email: $("#form-email").val(),
-        subject: $("#form-subject").val(),
-        formMessage: $("#form-message").val(),
-      };
-  
+       var formData = {
+         name: $("#form-name").val(),
+         email: $("#form-email").val(),
+         subject: $("#form-subject").val(),
+         formmessage: $("#form-message").val(),
+       };
+
       $.ajax({
         type: "POST",
         url: "process.php",
@@ -108,11 +108,10 @@ $(document).ready(function () {
         encode: true,
 
       }).done(function (data) {
-        console.log(data);
         if (!data.success) {
             if (data.errors.name) {
               $("#form-name").addClass("has-error");
-              $(".#form-name").append(
+              $("#form-name").append(
                 '<div class="help-block">' + data.errors.name + "</div>"
               );
             }
@@ -131,13 +130,13 @@ $(document).ready(function () {
               );
             }
     
-            if (data.errors.formMessage) {
+            if (data.errors.formmessage) {
                 $("#form-message").addClass("has-error");
                 $("#form-message").append(
-                  '<div class="help-block">' + data.errors.formMessage + "</div>"
-                );
+                  '<div class="help-block">' + data.errors.formmessage + "</div>"
+              );
             }
-          } else {
+          }else {
             $("form").html(
               '<div class="alert alert-success">' + data.message + "</div>"
             );
