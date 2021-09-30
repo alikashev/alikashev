@@ -97,7 +97,7 @@ $(document).ready(function () {
          name: $("#form-name").val(),
          email: $("#form-email").val(),
          subject: $("#form-subject").val(),
-         formmessage: $("#form-message").val(),
+         contactmessage: $("#form-message").val(),
        };
 
       $.ajax({
@@ -130,10 +130,10 @@ $(document).ready(function () {
               );
             }
     
-            if (data.errors.formmessage) {
+            if (data.errors.contactmessage) {
                 $("#form-message").addClass("has-error");
                 $("#form-message").append(
-                  '<div class="help-block">' + data.errors.formmessage + "</div>"
+                  '<div class="help-block">' + data.errors.contactmessage + "</div>"
               );
             }
           }else {

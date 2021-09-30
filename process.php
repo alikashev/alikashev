@@ -15,8 +15,8 @@ if (empty($_POST['subject'])) {
     $errors['subject'] = 'Subject is required.';
 }
 
-if (empty($_POST['formmessage'])) {
-    $errors['formmessage'] = 'Message is required.';
+if (empty($_POST['contactmessage'])) {
+    $errors['contactmessage'] = 'Message is required.';
 }
 
 if (!empty($errors)) {
@@ -31,12 +31,32 @@ echo json_encode($data);
 
 $to      = 'contact@alikashev.com';
 $subject = $_POST['subject'];
-$message = $_POST['formmessage'];
+$email = $_POST['email'];
+$name = $_POST['name'];
+$contactmessage = $_POST['contactmessage'];
 
-$headers = 'From: ' .$_POST['email'] . "\r\n" .
-    'Reply-To:' . $_POST['email'] . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+$message = '
+<html>
+<head>
+  <title>Contact met Ali Kashev</title>
+</head>
+<body>
+    <h3><b>Je hebt een bericht van: '.$name.'</b></h3>
+    <h4> Met als onderwerp: <b>'.$subject.'</b></h4>
+    <p><b>Bericht:</b><br> '.$contactmessage.'</p>
+</body>
+</html>
+';
 
-mail($to, $subject, $message, $headers);
+
+// To send HTML mail, the Content-type header must be set
+$headers[] = 'MIME-Version: 1.0';
+$headers[] = 'Content-type: text/html; charset=iso-8859-1';
+$headers[] = 'To: Ali Kashev <contact@alikashev.com>';
+$headers[] = 'From:'.$name.'<'.$emaii.'>';
+$headers[] = 'Reply-To:' . $email;
+
+// Mail it
+mail($to, $subject, $message, implode("\r\n", $headers));
 
 ?>
