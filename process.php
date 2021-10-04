@@ -40,9 +40,11 @@ $message = '
 <head>
   <title>Contact met Ali Kashev</title>
 </head>
-<body>
-    <h3><b>Je hebt een bericht van: '.$name.'</b></h3>
-    <h4> Met als onderwerp: <b>'.$subject.'</b></h4>
+<body style="background-color: black; color: white;">
+    <h3>Bericht van: <b>'.$name.'</b></h3>
+    <hr>
+    <h4>Onderwerp: <b>'.$subject.'</b></h4>
+    <hr>
     <p><b>Bericht:</b><br> '.$contactmessage.'</p>
 </body>
 </html>
@@ -53,7 +55,7 @@ $message = '
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 $headers[] = 'To: Ali Kashev <contact@alikashev.com>';
-$headers[] = 'From:'.$name.'<'.$emaii.'>';
+$headers[] = 'From:'.$name." "."<".$emaii.">";
 $headers[] = 'Reply-To:' . $email;
 
 // Mail it
