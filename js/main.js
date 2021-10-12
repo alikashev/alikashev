@@ -8,7 +8,7 @@
             
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top - 30
-            }, 1500, 'easeInOutExpo');
+            }, 100, 'easeInOutExpo');
             
             if ($(this).parents('.navbar-nav').length) {
                 $('.navbar-nav .active').removeClass('active');
@@ -23,7 +23,7 @@
         var typed_strings = $('.header .typed-text').text();
         var typed = new Typed('.header h4', {
             strings: typed_strings.split(', '),
-            typeSpeed: 100,
+            typeSpeed: 40,
             backSpeed: 20,
             smartBackspace: false,
             loop: true
