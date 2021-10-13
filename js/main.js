@@ -149,3 +149,22 @@ $(document).ready(function () {
       event.preventDefault();
     });
   });
+
+
+// Dark mode switch
+
+const checkbox = document.querySelector('#checkbox');
+const about = document.querySelector('.about');
+const experience = document.querySelector('.experience');
+const portfolio = document.querySelector('.portfolio');
+const contact = document.querySelector('.contact');
+const skills = document.querySelector('.skillss');
+
+checkbox.addEventListener('change', () => {
+  document.body.classList.toggle('white');
+  about.classList.toggle('white');
+  experience.classList.toggle('white');
+  portfolio.classList.toggle('white');
+  contact.classList.toggle('white');
+  skills.classList.toggle('white');
+})
