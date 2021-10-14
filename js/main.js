@@ -159,6 +159,11 @@ const experience = document.querySelector('.experience');
 const portfolio = document.querySelector('.portfolio');
 const contact = document.querySelector('.contact');
 const skills = document.querySelector('.skillss');
+const header = document.querySelector('.header');
+const wrapper = document.querySelector('.wrapper');
+const content = document.querySelector('.content');
+const contentInner = document.querySelector('.content-inner2');
+
 
 checkbox.addEventListener('change', () => {
   document.body.classList.toggle('white');
@@ -167,4 +172,9 @@ checkbox.addEventListener('change', () => {
   portfolio.classList.toggle('white');
   contact.classList.toggle('white');
   skills.classList.toggle('white');
+  header.classList.toggle('white');
+  wrapper.classList.toggle('white');
+  content.classList.toggle('white');
+  contentInner.classList.toggle('whitebb');
+  
 })

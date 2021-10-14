@@ -52,7 +52,6 @@ a:focus {
     width: 100%;
     padding: 1px;
     float: left;
-    background: #222222;
 }
 
 .wrapper .sidebar-header,
@@ -117,7 +116,6 @@ a:focus {
         content: "";
         width: 100%;
         height: 30px;
-        background: #222222;
         z-index: 1;
     }
     
@@ -361,7 +359,7 @@ a:focus {
     color: #A7CED8;
 }
 
-.large-btn .content-inner {
+.large-btn .content-inner2 {
     font-size: 0;
     border-bottom: 30px solid #222222;
 }
@@ -1330,7 +1328,11 @@ a:focus {
 }
 
 .white {
-    background: #A7CED8;
+    background: #ECF0F4;
     color: black;
+}
 
+.whitebb {
+    border-bottom: 30px solid #ECF0F4;
+    color: black;
 }
