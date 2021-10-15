@@ -163,18 +163,27 @@ const header = document.querySelector('.header');
 const wrapper = document.querySelector('.wrapper');
 const content = document.querySelector('.content');
 const contentInner = document.querySelector('.content-inner2');
+const myname = document.querySelector('.myname');
+const mynameis = document.querySelector('.mynameis');
+const typedcolor = document.querySelector('.typedcolor');
+const aboutme = document.querySelector('.aboutme');
+const abouttext = document.querySelector('.abouttext');
 
 
 checkbox.addEventListener('change', () => {
   document.body.classList.toggle('white');
-  about.classList.toggle('white');
+  about.classList.toggle('lighter');
   experience.classList.toggle('white');
   portfolio.classList.toggle('white');
   contact.classList.toggle('white');
-  skills.classList.toggle('white');
+  skills.classList.toggle('lighter');
   header.classList.toggle('white');
   wrapper.classList.toggle('white');
   content.classList.toggle('white');
   contentInner.classList.toggle('whitebb');
-  
+  myname.classList.toggle('mynamecolor');
+  mynameis.classList.toggle('mynameiscolor');
+  typedcolor.classList.toggle('typedcolorblack');
+  aboutme.classList.toggle('aboutmecolor');
+  abouttext.classList.toggle('aboutmecolor');
 })

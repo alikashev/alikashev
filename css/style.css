@@ -1333,6 +1333,26 @@ a:focus {
 }
 
 .whitebb {
-    border-bottom: 30px solid #ECF0F4;
+    border-bottom: 30px solid #ECF0F4 !important;
     color: black;
+}
+
+.lighter {
+    background: #F8F8FF;
+}
+
+.mynamecolor {
+    color: #06A0E5 !important;
+}
+
+.mynameiscolor {
+    color: black !important;
+}
+
+.typedcolorblack {
+    color: #06A0E5 !important;
+}
+
+.aboutmecolor {
+    color: black !important;
 }
