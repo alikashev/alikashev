@@ -168,6 +168,19 @@ const mynameis = document.querySelector('.mynameis');
 const typedcolor = document.querySelector('.typedcolor');
 const aboutme = document.querySelector('.aboutme');
 const abouttext = document.querySelector('.abouttext');
+const skillstitel = document.querySelector('.skillstitel');
+const skillname1 = document.querySelector('.skillname1');
+const skillname2 = document.querySelector('.skillname2');
+const skillname3 = document.querySelector('.skillname3');
+const skillname4 = document.querySelector('.skillname4');
+const skillname5 = document.querySelector('.skillname5');
+const skillprocent1 = document.querySelector('.skillprocent1');
+const skillprocent2 = document.querySelector('.skillprocent2');
+const skillprocent3 = document.querySelector('.skillprocent3');
+const skillprocent4 = document.querySelector('.skillprocent4');
+const skillprocent5 = document.querySelector('.skillprocent5');
+
+
 
 
 checkbox.addEventListener('change', () => {
@@ -186,4 +199,16 @@ checkbox.addEventListener('change', () => {
   typedcolor.classList.toggle('typedcolorblack');
   aboutme.classList.toggle('aboutmecolor');
   abouttext.classList.toggle('aboutmecolor');
+  skillstitel.classList.toggle('aboutmecolor');
+  skillname1.classList.toggle('aboutmecolor');
+  skillname2.classList.toggle('aboutmecolor');
+  skillname3.classList.toggle('aboutmecolor');
+  skillname4.classList.toggle('aboutmecolor');
+  skillname5.classList.toggle('aboutmecolor');
+  skillprocent1.classList.toggle('aboutmecolor');
+  skillprocent2.classList.toggle('aboutmecolor');
+  skillprocent3.classList.toggle('aboutmecolor');
+  skillprocent4.classList.toggle('aboutmecolor');
+  skillprocent5.classList.toggle('aboutmecolor');
+
 })

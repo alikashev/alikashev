@@ -366,7 +366,7 @@ a:focus {
 
 .large-btn .btn {
     position: relative;
-    width: 50%;
+    width: 100%;
     padding: 15px 0;
     color: #ffffff;
     font-size: 20px;
@@ -394,7 +394,7 @@ a:focus {
 }
 
 .large-btn .btn:hover {
-    width: 50%;
+    width: 100%;
     background: black;
     border: 1px solid #06A0E5;
     color: #A7CED8;
@@ -443,7 +443,7 @@ a:focus {
 }
 
 .about a {
-    color: #A7CED8;
+    color: #06A0E5;
 }
 
 .about a:hover {
