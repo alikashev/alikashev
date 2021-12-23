@@ -491,6 +491,14 @@ a:focus {
     color: #ffffff;
 }
 
+.about .skill-name1 p {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #A7CED8;
+}
+
 .about .skill-name p:last-child {
     float: right;
 }
@@ -1279,7 +1287,7 @@ a:focus {
 
 .skills-text {
     text-align: left;
-    margin: 0;
+    margin-bottom: 20px;
     padding: 0;
 }
 
@@ -1356,3 +1364,12 @@ a:focus {
 .aboutmecolor {
     color: black !important;
 }
+.ln-color {
+    color: red;;
+}
+
+#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+#more4 {display: none;}
