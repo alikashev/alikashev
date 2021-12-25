@@ -159,11 +159,11 @@ $(document).ready(function () {
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
-      btnText.innerHTML = "Lees meer";
+      btnText.innerHTML = "lees meer";
       moreText.style.display = "none";
     } else {
       dots.style.display = "none";
-      btnText.innerHTML = "Lees minder";
+      btnText.innerHTML = "lees minder";
       moreText.style.display = "inline";
     }
   }
@@ -175,11 +175,11 @@ $(document).ready(function () {
   
     if (dots1.style.display === "none") {
       dots1.style.display = "inline";
-      btnText1.innerHTML = "Lees meer";
+      btnText1.innerHTML = "lees meer";
       moreText1.style.display = "none";
     } else {
       dots1.style.display = "none";
-      btnText1.innerHTML = "Lees minder";
+      btnText1.innerHTML = "lees minder";
       moreText1.style.display = "inline";
     }
   }
@@ -191,11 +191,11 @@ $(document).ready(function () {
   
     if (dots2.style.display === "none") {
       dots2.style.display = "inline";
-      btnText2.innerHTML = "Lees meer";
+      btnText2.innerHTML = "lees meer";
       moreText2.style.display = "none";
     } else {
       dots2.style.display = "none";
-      btnText2.innerHTML = "Lees minder";
+      btnText2.innerHTML = "lees minder";
       moreText2.style.display = "inline";
     }
   }
@@ -207,11 +207,11 @@ $(document).ready(function () {
   
     if (dots3.style.display === "none") {
       dots3.style.display = "inline";
-      btnText3.innerHTML = "Lees meer";
+      btnText3.innerHTML = "lees meer";
       moreText3.style.display = "none";
     } else {
       dots3.style.display = "none";
-      btnText3.innerHTML = "Lees minder";
+      btnText3.innerHTML = "lees minder";
       moreText3.style.display = "inline";
     }
   }
@@ -223,12 +223,28 @@ $(document).ready(function () {
   
     if (dots4.style.display === "none") {
       dots4.style.display = "inline";
-      btnText4.innerHTML = "Lees meer";
+      btnText4.innerHTML = "lees meer";
       moreText4.style.display = "none";
     } else {
       dots4.style.display = "none";
-      btnText4.innerHTML = "Lees minder";
+      btnText4.innerHTML = "lees minder";
       moreText4.style.display = "inline";
+    }
+  }
+
+  function readMore5() {
+    var dots5 = document.getElementById("dots5");
+    var moreText5 = document.getElementById("more5");
+    var btnText5 = document.getElementById("myBtn5");
+  
+    if (dots5.style.display === "none") {
+      dots5.style.display = "inline";
+      btnText5.innerHTML = "lees meer";
+      moreText5.style.display = "none";
+    } else {
+      dots5.style.display = "none";
+      btnText5.innerHTML = "lees minder";
+      moreText5.style.display = "inline";
     }
   }
 

@@ -1373,6 +1373,7 @@ a:focus {
 #more2 {display: none;}
 #more3 {display: none;}
 #more4 {display: none;}
+#more5 {display: none;}
 
 .hobby-icon {
     color: #06A0E5;
@@ -1380,4 +1381,45 @@ a:focus {
 
 .hobby-icon1 {
     color: #A7CED8;
+}
+
+#myBtn,
+#myBtn1,
+#myBtn2,
+#myBtn3,
+#myBtn4,
+#myBtn5 {
+    color: #A7CED8;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    color: #06A0E5;
+    transition: 0.2s ease-in;
+}
+
+
+#myBtn1:hover {
+    color: #06A0E5;
+    transition: 0.2s ease-in;
+}
+
+#myBtn2:hover {
+    color: #06A0E5;
+    transition: 0.2s ease-in;
+}
+
+#myBtn3:hover {
+    color: #06A0E5;
+    transition: 0.2s ease-in;
+}
+
+#myBtn4:hover {
+    color: #06A0E5;
+    transition: 0.2s ease-in;
+}
+
+#myBtn5:hover {
+    color: #06A0E5;
+    transition: 0.2s ease-in;
 }
