@@ -55,7 +55,7 @@ $message = '
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 $headers[] = 'To: Ali Kashev <contact@alikashev.com>';
-$headers[] = 'From:'.$name.;
+$headers[] = 'From:'.$name." "."$emaii";
 $headers[] = 'Reply-To:' . $email;
 
 // Mail it
