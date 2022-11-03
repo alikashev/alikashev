@@ -162,8 +162,9 @@ a:focus {
     }
 
     .wrapper .sidebar .sidebar-header .logo {
-        width: 200px;
+        width: 100%;
         height: auto;
+        max-width: 100%;
     }
     
     .navbar-brand {
@@ -1251,7 +1252,8 @@ a:focus {
     border: 1px solid #A7CED8;
 }
 .logo {
-    width: 150px;
+    width: 250px;
+    height: auto;
     padding: 5px;
 }
 
@@ -1284,7 +1286,7 @@ a:focus {
 
 .loading {
     position: relative;
-    margin-right: 20px;
+    margin: 0%;
 }
 
 .skills-text {
@@ -1424,4 +1426,9 @@ a:focus {
 #myBtn5:hover {
     color: #06A0E5;
     transition: 0.2s ease-in;
+}
+
+.welcome-logo {
+    width: 600px;
+    height: auto;
 }
