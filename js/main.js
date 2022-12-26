@@ -79,13 +79,13 @@
 
 // splash screen 
 
-const splash = document.querySelector('.splash');
+//const splash = document.querySelector('.splash');
 
-document.addEventListener('DOMContentLoaded', (e)=>{
-    setTimeout(()=>{
-        splash.classList.add('display-none');
-    }, 3000);
-})
+//document.addEventListener('DOMContentLoaded', (e)=>{
+//    setTimeout(()=>{
+ //       splash.classList.add('display-none');
+//    }, 3000);
+//})
 
 // contact form 
 
