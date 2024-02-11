@@ -24,12 +24,12 @@ if (!empty($errors)) {
     $data['errors'] = $errors;
 } else {
     $data['success'] = true;
-    $data['message'] = 'Verstuurd, Ik neem zo snel mogelijk contact met u op.';
+    $data['message'] = 'Bedankt, verstuurd! Ik neem zo snel mogelijk contact met u op.';
 }
 
 echo json_encode($data);
 
-$to      = 'contact@alikashev.com';
+$to      = 'contact@alikashev.nl';
 $subject = $_POST['subject'];
 $email = $_POST['email'];
 $name = $_POST['name'];
@@ -54,7 +54,7 @@ $message = '
 // To send HTML mail, the Content-type header must be set
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=iso-8859-1';
-$headers[] = 'To: Ali Kashev <contact@alikashev.com>';
+$headers[] = 'To: Ali Kashev <contact@alikashev.nl>';
 $headers[] = 'From: '.$name." "."<".$email.">";
 $headers[] = 'Reply-To:' . $email;
 
