@@ -23,8 +23,8 @@ jobs:
       - name: SFTP Deploy
         uses: wlixcc/SFTP-Deploy-Action@v1.2.1
         with:
-          username: alikashev.com
-          server: ssh.strato.com
+          username: alikashev.nl
+          server: ssh.alikashev.nl
           port: 22 # default is 22
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
  
