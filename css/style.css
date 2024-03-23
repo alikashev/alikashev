@@ -1432,3 +1432,8 @@ a:focus {
     width:300px;
     height: auto;
 }
+
+.loading {
+    width: 100px;
+    height: auto;
+}
