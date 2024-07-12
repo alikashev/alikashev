@@ -38,6 +38,9 @@
         crossorigin="anonymous">
         </script>
 
+        <!-- RECAPTCHA -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
@@ -645,15 +648,12 @@
                                             <textarea id="form-message" type="text" class="form-control" name="formmessage" style="resize: none;" rows="5" placeholder="Bericht..." required></textarea>
                                         </div>
                                         <div>
+                                            <div required class="g-recaptcha" data-sitekey="6LfkzA4qAAAAAD_WczhphzF9WEFnCVhsHm_m7-xp"></div>
                                             <button 
                                             id="form-submit" 
                                             class="btn btn-block" 
                                             name="submit" 
                                             type="submit"
-                                            class="g-recaptcha" 
-                                            data-sitekey="6LfKxw4qAAAAAOtpw45xn0Fo3cjVunUBAjLA-AKP" 
-                                            data-callback='onSubmit' 
-                                            data-action='submit'
                                             >Verstuur</button>
                                         </div>
                                     </form>
@@ -704,16 +704,5 @@
 
         <!-- Javascript -->
         <script src="js/main.js"></script>
-
-
-        <!-- RECAPTCHA -->
-        <script src="https://www.google.com/recaptcha/api.js"></script>
-
-        <script>
-            function onSubmit(token) {
-              document.getElementById("form").submit();
-            }
-          </script>
-
     </body>
 </html>
