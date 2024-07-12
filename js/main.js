@@ -151,21 +151,12 @@ $(document).ready(function () {
 
   //Recaptcha check
 
-  var allowSubmit = false;
-
-  function capcha_filled () {
-    allowSubmit = true;
-  }
-
-  function capcha_expired () {
-    allowSubmit = false;
-  }
-
-  function check_if_capcha_is_filled (e) {
-    if(allowSubmit) return true;
-    e.preventDefault();
-    alert('Fill in the capcha!');
-}
+  window.addEventListener('load', () => {
+    const $recaptcha = document.querySelector('#g-recaptcha-response');
+    if ($recaptcha) {
+      $recaptcha.setAttribute('required', 'required');
+    }
+  })
 
 
   // read more 
