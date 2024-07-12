@@ -106,7 +106,6 @@ $(document).ready(function () {
         data: formData,
         dataType: "json",
         encode: true,
-
       }).done(function (data) {
         if (!data.success) {
             if (data.errors.name) {
@@ -149,6 +148,25 @@ $(document).ready(function () {
       event.preventDefault();
     });
   });
+
+  //Recaptcha check
+
+  var allowSubmit = false;
+
+  function capcha_filled () {
+    allowSubmit = true;
+  }
+
+  function capcha_expired () {
+    allowSubmit = false;
+  }
+
+  function check_if_capcha_is_filled (e) {
+    if(allowSubmit) return true;
+    e.preventDefault();
+    alert('Fill in the capcha!');
+}
+
 
   // read more 
 

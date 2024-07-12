@@ -621,7 +621,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form">
-                                    <form id="form" class="contactForm" action="process.php" method="POST">
+                                    <form id="form" class="contactForm" action="process.php" method="POST" onsubmit="check_if_capcha_is_filled">
 
                                            <!-- form message -->
                                            <div class="row">
@@ -648,7 +648,11 @@
                                             <textarea id="form-message" type="text" class="form-control" name="formmessage" style="resize: none;" rows="5" placeholder="Bericht..." required></textarea>
                                         </div>
                                         <div>
-                                            <div required class="g-recaptcha" data-sitekey="6LfkzA4qAAAAAD_WczhphzF9WEFnCVhsHm_m7-xp"></div>
+                                            <div class="g-recaptcha" 
+                                            data-sitekey="6LfkzA4qAAAAAD_WczhphzF9WEFnCVhsHm_m7-xp"
+                                            data-callback="capcha_filled"
+                                            data-expired-callback="capcha_expired"
+                                            ></div>
                                             <button 
                                             id="form-submit" 
                                             class="btn btn-block" 
