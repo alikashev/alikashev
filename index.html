@@ -618,7 +618,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form">
-                                    <form class="contactForm" action="process.php" method="POST">
+                                    <form id="form" class="contactForm" action="process.php" method="POST">
 
                                            <!-- form message -->
                                            <div class="row">
@@ -645,7 +645,16 @@
                                             <textarea id="form-message" type="text" class="form-control" name="formmessage" style="resize: none;" rows="5" placeholder="Bericht..." required></textarea>
                                         </div>
                                         <div>
-                                            <button id="form-submit" class="btn btn-block" name="submit" type="submit">Verstuur</button>
+                                            <button 
+                                            id="form-submit" 
+                                            class="btn btn-block" 
+                                            name="submit" 
+                                            type="submit"
+                                            class="g-recaptcha" 
+                                            data-sitekey="6LfKxw4qAAAAAOtpw45xn0Fo3cjVunUBAjLA-AKP" 
+                                            data-callback='onSubmit' 
+                                            data-action='submit'
+                                            >Verstuur</button>
                                         </div>
                                     </form>
                                 </div>
@@ -695,5 +704,16 @@
 
         <!-- Javascript -->
         <script src="js/main.js"></script>
+
+
+        <!-- RECAPTCHA -->
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+
+        <script>
+            function onSubmit(token) {
+              document.getElementById("form").submit();
+            }
+          </script>
+
     </body>
 </html>
