@@ -291,7 +291,8 @@ a:focus {
 }
 
 .back-to-top i {
-    color: #06A0E5;
+   /* color: #06A0E5; */
+   color: red;
 }
 
 .back-to-top i:hover {
