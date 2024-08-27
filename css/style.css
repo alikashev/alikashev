@@ -431,7 +431,8 @@ a:focus {
     height: 3px;
     bottom: 0;
     left: 0;
-    background: #06A0E5;
+   /* background: #06A0E5; */
+    background: red;
 }
 
 
