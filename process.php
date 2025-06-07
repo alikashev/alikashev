@@ -8,9 +8,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $bericht = htmlspecialchars(trim($_POST["contactmessage"]));
 
     echo $naam;
-    echo $naam;
-    echo $naam;
-    echo $naam;
+    echo $email;
+    echo $onderwerp;
+    echo $bericht;
 
 
     // Check of alles is ingevuld
