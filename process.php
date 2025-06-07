@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message .= "Onderwerp:\n$onderwerp\n";
         $message .= "Bericht:\n$bericht\n";
 
-        $headers = "From: $email\r\n";
+        $headers = "From: contact@alikashev.nl\r\n";
         $headers .= "Reply-To: $email\r\n";
         $headers .= "X-Mailer: PHP/" . phpversion();
 
