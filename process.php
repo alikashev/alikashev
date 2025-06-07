@@ -1,64 +1,37 @@
 <?php
 
-$errors = [];
-$data = [];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Veilig de gegevens ophalen en filteren
+    $naam = htmlspecialchars(trim($_POST["name"]));
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $onderwerp = htmlspecialchars(trim($_POST["subject"]));
+    $bericht = htmlspecialchars(trim($_POST["contactmessage"]));
 
-if (empty($_POST['name'])) {
-    $errors['name'] = 'Name is required.';
-}
+    // Check of alles is ingevuld
+    if (!empty($naam) && !empty($email) && !empty($onderwerp) && !empty($bericht)) {
+        $to = "contact@alikashev.nl"; // Verander dit naar je eigen e-mailadres
+        $subject = "Nieuw bericht van contactformulier";
+        
+        $message = "Naam: $naam\n";
+        $message .= "E-mail: $email\n";
+        $message .= "Onderwerp:\n$onderwerp\n";
+        $message .= "Bericht:\n$bericht\n";
 
-if (empty($_POST['email'])) {
-    $errors['email'] = 'Email is required.';
-}
+        $headers = "From: $email\r\n";
+        $headers .= "Reply-To: $email\r\n";
+        $headers .= "X-Mailer: PHP/" . phpversion();
 
-if (empty($_POST['subject'])) {
-    $errors['subject'] = 'Subject is required.';
-}
-
-if (empty($_POST['contactmessage'])) {
-    $errors['contactmessage'] = 'Message is required.';
-}
-
-if (!empty($errors)) {
-    $data['success'] = false;
-    $data['errors'] = $errors;
+        // Verstuur de mail
+        if (mail($to, $subject, $message, $headers)) {
+            echo "Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.";
+        } else {
+            echo "Er is een fout opgetreden. Probeer het later opnieuw.";
+        }
+    } else {
+        echo "Vul alle velden in aub.";
+    }
 } else {
-    $data['success'] = true;
-    $data['message'] = 'Bedankt, verstuurd! Ik neem zo snel mogelijk contact met je op.';
+    echo "Ongeldige aanvraag.";
 }
-
-echo json_encode($data);
-
-$to      = 'contact@alikashev.nl';
-$subject = $_POST['subject'];
-$email = $_POST['email'];
-$name = $_POST['name'];
-$contactmessage = $_POST['contactmessage'];
-
-$message = '
-<html>
-<head>
-  <title>Contact met Ali Kashev</title>
-</head>
-<body style="background-color: black; color: white;">
-    <h3>Bericht van: <b>'.$name.'</b></h3>
-    <hr>
-    <h4>Onderwerp: <b>'.$subject.'</b></h4>
-    <hr>
-    <p><b>Bericht:</b><br> '.$contactmessage.'</p>
-</body>
-</html>
-';
-
-
-// To send HTML mail, the Content-type header must be set
-$headers[] = 'MIME-Version: 1.0';
-$headers[] = 'Content-type: text/html; charset=UTF-8';
-$headers[] = 'To: Ali Kashev <contact@alikashev.nl>';
-$headers[] = 'From: '.$name." "."<".$email.">";
-$headers[] = 'Reply-To:' . $email;
-
-// Mail it
-mail($to, $subject, $message, implode("\r\n", $headers));
 
 ?>
