@@ -7,6 +7,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $onderwerp = htmlspecialchars(trim($_POST["subject"]));
     $bericht = htmlspecialchars(trim($_POST["contactmessage"]));
 
+    echo $naam;
+    echo $naam;
+    echo $naam;
+    echo $naam;
+
+
     // Check of alles is ingevuld
     if (!empty($naam) && !empty($email) && !empty($onderwerp) && !empty($bericht)) {
         $to = "contact@alikashev.nl"; // Verander dit naar je eigen e-mailadres
