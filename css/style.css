@@ -1434,13 +1434,6 @@ a:focus {
     width: 500px;
     height: auto;
 }
-
-@media (max-width: 768px) {
-    .welcome-logo {
-        width: 200px;
-        height: auto;
-    }
-
     .logosplash {
         margin: auto;
         width: 50%;
@@ -1451,7 +1444,6 @@ a:focus {
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
-}
 
 .loading {
     width: 100px;
