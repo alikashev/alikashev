@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Check of alles is ingevuld
     if (!empty($naam) && !empty($email) && !empty($onderwerp) && !empty($bericht)) {
-        $to = "ali.kashev@icloud.com"; // Verander dit naar je eigen e-mailadres
+        $to = "contact@alikashev.nl"; // Verander dit naar je eigen e-mailadres
         $subject = "Nieuw bericht van contactformulier";
         
         $message = "Naam: $naam\n";
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message .= "Onderwerp:\n$onderwerp\n";
         $message .= "Bericht:\n$bericht\n";
 
-        $headers = "From: ali.kashev@icloud.com\r\n";
+        $headers = "From: contact@alikashev.nl\r\n";
         $headers .= "Reply-To: $email\r\n";
         $headers .= "X-Mailer: PHP/" . phpversion();
 
