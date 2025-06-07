@@ -1431,8 +1431,26 @@ a:focus {
 }
 
 .welcome-logo {
-    width:500px;
+    width: 500px;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .welcome-logo {
+        width: 200px;
+        height: auto;
+    }
+
+    .logosplash {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
 }
 
 .loading {
