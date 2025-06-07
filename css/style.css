@@ -1431,7 +1431,7 @@ a:focus {
 }
 
 .welcome-logo {
-    width:300px;
+    width:500px;
     height: auto;
 }
 
@@ -1449,4 +1449,15 @@ a:focus {
     height: 76px !important;
     z-index: -999999;
     opacity: 0;
+  }
+
+  .logosplash {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
