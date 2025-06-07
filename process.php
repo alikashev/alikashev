@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $naam = htmlspecialchars(trim($_POST["name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $onderwerp = htmlspecialchars(trim($_POST["subject"]));
-    $bericht = htmlspecialchars(trim($_POST["contactmessage"]));
+    $bericht = htmlspecialchars(trim($_POST["formmessage"]));
 
     echo $naam;
     echo $email;
