@@ -27,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = $_ENV['SMTP_PORT'];
 
-            echto $_ENV['SMTP_USER'];
-            echto $_ENV['SMTP_PORT'];
+            echo $_ENV['SMTP_USER'];
+            echo $_ENV['SMTP_PORT'];
 
             $mail->setFrom($_ENV['SMTP_USER'], 'Contactformulier');
             $mail->addAddress($_ENV['SMTP_USER']);
