@@ -100,6 +100,11 @@ $(document).ready(function () {
          contactmessage: $("#form-message").val(),
        };
 
+       console.log(name);
+       console.log(email);
+       console.log(subject);
+       console.log(contactmessage);
+
       $.ajax({
         type: "POST",
         url: "process.php",
