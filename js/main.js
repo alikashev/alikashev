@@ -90,64 +90,68 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 //contact form 
 
 $(document).ready(function () {
-    $(".form").submit(function (event) {
-        $(".form-group").removeClass("has-error");
-        $(".help-block").remove();
-       var formData = {
-         name: $("#form-name").val(),
-         email: $("#form-email").val(),
-         subject: $("#form-subject").val(),
-         contactmessage: $("#form-message").val(),
-       };
+  $(".form").submit(function (event) {
+    event.preventDefault();
 
-      $.ajax({
-        type: "POST",
-        url: "process.php",
-        data: formData,
-        dataType: "json",
-        encode: true,
-      }).done(function (data) {
+    $(".form-group").removeClass("has-error");
+    $(".help-block").remove();
+
+    $("#form-submit").prop("disabled", true).text("Versturen...");
+
+    var formData = {
+      name: $("#form-name").val(),
+      email: $("#form-email").val(),
+      subject: $("#form-subject").val(),
+      formmessage: $("#form-message").val(), // <-- veldnaam aangepast
+    };
+
+    $.ajax({
+      type: "POST",
+      url: "process.php",
+      data: formData,
+      dataType: "json",
+      encode: true,
+    })
+      .done(function (data) {
+        $("#form-submit").prop("disabled", false).text("Verstuur");
+
         if (!data.success) {
-            if (data.errors.name) {
-              $("#form-name").addClass("has-error");
-              $("#form-name").append(
-                '<div class="help-block">' + data.errors.name + "</div>"
-              );
-            }
-    
-            if (data.errors.email) {
-              $("#form-email").addClass("has-error");
-              $("#form-email").append(
-                '<div class="help-block">' + data.errors.email + "</div>"
-              );
-            }
-    
-            if (data.errors.subject) {
-              $("#form-subject").addClass("has-error");
-              $("#form-subject").append(
-                '<div class="help-block">' + data.errors.subject + "</div>"
-              );
-            }
-    
-            if (data.errors.contactmessage) {
-                $("#form-message").addClass("has-error");
-                $("#form-message").append(
-                  '<div class="help-block">' + data.errors.contactmessage + "</div>"
-              );
-            }
-          }else {
-            $("form").html(
-              '<div class="alert alert-success">' + data.message + "</div>"
-            );
+          if (data.errors.name) {
+            $("#form-name")
+              .addClass("is-invalid")
+              .after('<div class="invalid-feedback d-block">' + data.errors.name + "</div>");
           }
-      }).fail(function (data) {
-        $("form").html(
+
+          if (data.errors.email) {
+            $("#form-email")
+              .addClass("is-invalid")
+              .after('<div class="invalid-feedback d-block">' + data.errors.email + "</div>");
+          }
+
+          if (data.errors.subject) {
+            $("#form-subject")
+              .addClass("is-invalid")
+              .after('<div class="invalid-feedback d-block">' + data.errors.subject + "</div>");
+          }
+
+          if (data.errors.formmessage) {
+            $("#form-message")
+              .addClass("is-invalid")
+              .after('<div class="invalid-feedback d-block">' + data.errors.formmessage + "</div>");
+          }
+        } else {
+          $(".form").html('<div class="alert alert-success">' + data.message + "</div>");
+        }
+      })
+      .fail(function () {
+        $("#form-submit").prop("disabled", false).text("Verstuur");
+        $(".form").html(
           '<div class="alert alert-danger">Fout, je bericht is niet gestuurd. Probeer het later opnieuw.</div>'
         );
       });
-      event.preventDefault();
-    });
   });
+});
+
 
   //Recaptcha check
 
