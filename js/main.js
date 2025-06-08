@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 //contact form 
 
 $(document).ready(function () {
-  $(".form").submit(function (event) {
+  $(".contactForm").submit(function (event) {
     event.preventDefault();
 
     $(".form-group").removeClass("has-error");
