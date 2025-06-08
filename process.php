@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->SMTPAuth = true;
             $mail->Username = $_ENV['SMTP_USER'];
             $mail->Password = $_ENV['SMTP_PASS'];
-            //$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = $_ENV['SMTP_PORT'];
 
             //echo $_ENV['SMTP_USER'];
