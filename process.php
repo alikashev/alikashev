@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         try {
             $mail->isSMTP();
             $mail->Host = $_ENV['SMTP_HOST'];
-            $mail->SMTPAuth = true;
+            $mail->SMTPAuth = false;
             $mail->Username = $_ENV['SMTP_USER'];
             $mail->Password = $_ENV['SMTP_PASS'];
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
