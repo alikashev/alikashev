@@ -1,4 +1,8 @@
 node_modules
 lib
 .DS_Store≈
+<<<<<<< HEAD
 .env
+=======
+.env
+>>>>>>> 983c3796f7a7ac6d80533a0b1fdda6de143e2b7b
