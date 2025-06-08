@@ -99,10 +99,10 @@ $(document).ready(function () {
     $("#form-submit").prop("disabled", true).text("Versturen...");
 
     var formData = {
-      name: $("#form-name").val(),
-      email: $("#form-email").val(),
-      subject: $("#form-subject").val(),
-      formmessage: $("#form-message").val(), // <-- veldnaam aangepast
+      name: $("name").val(),
+      email: $("email").val(),
+      subject: $("subject").val(),
+      formmessage: $("formmessage").val(), // <-- veldnaam aangepast
     };
 
     $.ajax({
