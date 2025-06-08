@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', (e)=>{
 
 //contact form 
 
-$(document).ready(function () {
+/* $(document).ready(function () {
     $("#form").submit(function (event) {
         $(".form-group").removeClass("has-error");
         $(".help-block").remove();
@@ -162,7 +162,7 @@ $(document).ready(function () {
       $recaptcha.setAttribute('required', 'required');
     }
   })
-
+*/
 
   // read more 
 
