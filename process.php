@@ -28,9 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Port = $_ENV['SMTP_PORT'];
 
             echo $_ENV['SMTP_USER'];
-            $_ENV['SMTP_PASS'];
+            echo $_ENV['SMTP_PASS'];
             echo $_ENV['SMTP_PORT'];
-            $_ENV['SMTP_HOST'];
+            echo $_ENV['SMTP_HOST'];
 
             $mail->setFrom($_ENV['SMTP_USER'], 'Contactformulier');
             $mail->addAddress($_ENV['SMTP_USER']);
