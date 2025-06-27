@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Check of alles is ingevuld
     if (!empty($naam) && !empty($email) && !empty($onderwerp) && !empty($bericht)) {
-        $to = "contact@alikashev.nl"; // Verander dit naar je eigen e-mailadres
+        $to = "ali.kashev@icloud.com"; // Verander dit naar je eigen e-mailadres
         $subject = "Nieuw bericht van contactformulier";
         
         $message = "Naam: $naam\n";
