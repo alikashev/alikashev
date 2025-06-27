@@ -7,12 +7,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $onderwerp = htmlspecialchars(trim($_POST["subject"]));
     $bericht = htmlspecialchars(trim($_POST["formmessage"]));
 
-    echo $naam;
-    echo $email;
-    echo $onderwerp;
-    echo $bericht;
-
-
     // Check of alles is ingevuld
     if (!empty($naam) && !empty($email) && !empty($onderwerp) && !empty($bericht)) {
         $to = "ali.kashev@icloud.com"; // Verander dit naar je eigen e-mailadres
