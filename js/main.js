@@ -142,8 +142,9 @@ $(document).ready(function () {
           }
       }).fail(function (data) {
         $("form").html(
-          '<div class="alert alert-danger">Fout, je bericht is niet gestuurd. Probeer het later opnieuw.</div>'
+          '<div class="alert alert-danger">Fouttttt, je bericht is niet gestuurd. Probeer het later opnieuw.</div>'
         );
+        console.log(data);
       });
       event.preventDefault();
     });
