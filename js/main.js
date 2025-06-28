@@ -94,7 +94,7 @@ $(document).ready(function () {
         $(".form-group").removeClass("has-error");
         $(".help-block").remove();
        var formData = {
-         name: $("#form-name").val(),
+         contact_name: $("#form-name").val(),
          email: $("#form-email").val(),
          subject: $("#form-subject").val(),
          contactmessage: $("#form-message").val(),
@@ -106,6 +106,10 @@ $(document).ready(function () {
         dataType: "json",
         encode: true,
       }).done(function (data) {
+      console.log(contact_name);
+      console.log(email);
+      console.log(subject);
+      console.log(contactmessage);
         if (!data.success) {
             if (data.errors.name) {
               $("#form-name").addClass("has-error");
@@ -148,11 +152,6 @@ $(document).ready(function () {
       event.preventDefault();
     });
   });
-
-      console.log(name);
-      console.log(email);
-      console.log(subject);
-      console.log(contactmessage);
 
   //Recaptcha check
 
