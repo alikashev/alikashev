@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (empty($response['errors'])) {
-        $to = "ali.kashev@icloud.com";
+        $to = "contact@alikashev.nl";
         $subject = "Nieuw bericht van contactformulier";
 
         $message = "Naam: $naam\n";
