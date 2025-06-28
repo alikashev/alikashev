@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->SMTPAuth   = true;
             $mail->Username   = 'contact@alikashev.nl'; // ✏️ SMTP gebruikersnaam
             $mail->Password   = 'sxle-vyrd-yzue-itro';        // ✏️ SMTP wachtwoord
-            $mail->SMTPSecure = 'ssl';                    // 'tls' of 'ssl'
+            $mail->SMTPSecure = 'tls';                    // 'tls' of 'ssl'
             $mail->Port       = 587;                      // 587 voor TLS, 465 voor SSL
 
             // Afzender & ontvanger
