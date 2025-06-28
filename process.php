@@ -1,19 +1,16 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-
-require 'vendor/autoload.php'; // of pad naar PHPMailer handmatig
-
 header('Content-Type: application/json');
 
 $response = ['success' => false, 'errors' => []];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Veilig ophalen van de data
     $naam = htmlspecialchars(trim($_POST["contact_name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $onderwerp = htmlspecialchars(trim($_POST["subject"]));
     $bericht = htmlspecialchars(trim($_POST["contactmessage"]));
 
+    // Validatie
     if (empty($naam)) {
         $response['errors']['name'] = "Naam is verplicht.";
     }
@@ -30,38 +27,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (empty($response['errors'])) {
-        $mail = new PHPMailer(true);
+        $to = "contact@alikashev.com";
+        $subject = "Nieuw bericht van contactformulier";
 
-        try {
-            // SMTP-configuratie
-            $mail->isSMTP();
-            $mail->Host       = 'smtp.mail.me.com'; // ✏️ Jouw SMTP-server
-            $mail->SMTPAuth   = true;
-            $mail->Username   = 'contact@alikashev.nl'; // ✏️ SMTP gebruikersnaam
-            $mail->Password   = 'sxle-vyrd-yzue-itro';        // ✏️ SMTP wachtwoord
-            $mail->SMTPSecure = 'tls';                    // 'tls' of 'ssl'
-            $mail->Port       = 587;                      // 587 voor TLS, 465 voor SSL
+        $message = "Naam: $naam\n";
+        $message .= "E-mail: $email\n";
+        $message .= "Onderwerp:\n$onderwerp\n";
+        $message .= "Bericht:\n$bericht\n";
 
-            // Afzender & ontvanger
-            $mail->setFrom($email, $naam); 
-            $mail->addAddress('contact@alikashev.nl'); // ✉️ Jouw ontvangstadres
-            $mail->addReplyTo($email, $naam);
+        $headers = "From: $email\r\n";
+        $headers .= "Reply-To: $email\r\n";
+        $headers .= "X-Mailer: PHP/" . phpversion();
 
-            // Inhoud
-            $mail->Subject = 'Nieuw bericht van contactformulier';
-            $mail->Body = "Naam: $naam\nE-mail: $email\nOnderwerp:\n$onderwerp\nBericht:\n$bericht";
-
-            $mail->send();
+        if (mail($to, $subject, $message, $headers)) {
             $response['success'] = true;
             $response['message'] = "Bedankt voor je bericht! We nemen contact met je op.";
-        } catch (Exception $e) {
-            $response['message'] = "Verzenden mislukt. Mailer Error: {$mail->ErrorInfo}";
+        } else {
+            $response['message'] = "Er is een fout opgetreden. Probeer het later opnieuw.";
         }
     }
 } else {
     $response['message'] = "Ongeldige aanvraag.";
 }
 
-echo json_encode($response); 
+echo json_encode($response);
 
 ?>
