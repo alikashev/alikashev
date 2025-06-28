@@ -106,8 +106,6 @@ $(document).ready(function () {
         dataType: "json",
         encode: true,
       }).done(function (data) {
-      console.log("Response van server:", data);
-      console.log("Verstuurd:", formData);
         if (!data.success) {
             if (data.errors.name) {
               $("#form-name").addClass("has-error");
