@@ -106,7 +106,7 @@ $(document).ready(function () {
         dataType: "json",
         encode: true,
       }).done(function (data) {
-      console.log(contact_name);
+      console.log(data.contact_name);
       console.log(email);
       console.log(subject);
       console.log(contactmessage);
